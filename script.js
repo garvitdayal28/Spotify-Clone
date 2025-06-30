@@ -42,7 +42,7 @@ async function main() {
 
           currentSong.src = songs[ID];
           currentSong.play();
-          play.src = "pause.svg";
+          play.src = "utils/pause.svg";
 
           document.querySelector(".song-name").innerHTML = songName[ID];
 
@@ -54,7 +54,7 @@ async function main() {
                 (currentSong.currentTime / currentSong.duration) * 100 + "%";
 
               if(currentSong.currentTime === currentSong.duration){
-                play.src = "play.svg";
+                play.src = "utils/play.svg";
               }
             }
 
@@ -86,10 +86,10 @@ async function main() {
           play.addEventListener("click", () => {
             if (currentSong.paused) {
               currentSong.play();
-              play.src = "pause.svg";
+              play.src = "utils/pause.svg";
             } else {
               currentSong.pause();
-              play.src = "play.svg";
+              play.src = "utils/play.svg";
             }
           });
 
@@ -106,7 +106,7 @@ next.addEventListener("click", () => {
   document.querySelector(".song-name").innerHTML = songName[currentSongIndex];
   currentSong.load();
   currentSong.play().then(() => {
-    play.src = "pause.svg";
+    play.src = "utils/pause.svg";
   }).catch(err => {
     console.log("Autoplay prevented:", err);
   });
@@ -118,7 +118,7 @@ previous.addEventListener("click", () => {
   document.querySelector(".song-name").innerHTML = songName[currentSongIndex];
   currentSong.load();
   currentSong.play().then(() => {
-    play.src = "pause.svg";
+    play.src = "utils/pause.svg";
   }).catch(err => {
     console.log("Autoplay prevented:", err);
   });

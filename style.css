@@ -311,7 +311,7 @@ body {
 
 
 
-/* .volume-container {
+.volume-container {
   position: fixed;
   right: 300px;
   bottom: 15px;
@@ -332,14 +332,14 @@ body {
   left: 35px; 
   top: calc(50% - 3px); 
   height: 3px;
-  width: 0px;
+  width: 100px;
   border-radius: 5px;
   border: 2px solid white;
   background-color: white;
   appearance: none;
-  opacity: 0;
+  opacity: 1;
   transition: width 0.4s ease, opacity 0.4s ease;
-  pointer-events: none;
+  pointer-events: auto;
   z-index: 1;
 }
 
@@ -349,17 +349,17 @@ body {
   width: 100px;
   opacity: 1;
   pointer-events: auto;
-} */
+} 
 
 
-.volume-container {
-  
+/* .volume-container {
+  position: fixed;
   right: 300px;
   bottom: 15px;
   z-index: 10;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
 }
 
 .volume {
@@ -384,4 +384,4 @@ body {
   opacity: 1;
   pointer-events: auto;
   z-index: 1;
-}
+} */
