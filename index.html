@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for Everyone</title>
+    <style>
+      .content {
+        display: flex;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="icon" href="./favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey m-1 rounded">
+          <div class="logo">
+            <img class="invert" src="logo.png" alt="logo" width="150px" />
+          </div>
+          <ul>
+            <li>
+              <img class="invert" src="home.svg" alt="home" width="31px" />Home
+            </li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey m-1 rounded flex-column">
+          <div class="text-lib">
+            <h2>Your Library</h2>
+            <img
+              class="invert flex"
+              src="plus-sign.svg"
+              alt=""
+              srcset=""
+              width="20px"
+            />
+          </div>
+
+          <div class="create-playlist m-2 rounded bg-grey-2 flex-column">
+            <h3>Create your first playlist</h3>
+            <h4>it's easy we'll help you</h4>
+            <button>Create playlist</button>
+          </div>
+          <div class="browse-podcast m-2 rounded bg-grey-2 flex-column">
+            <h3>Let's find some podcasts to follow</h3>
+            <h4>We'll keep you updated on new episodes</h4>
+            <button>Browse podcasts</button>
+          </div>
+          <div class="footer">
+            <div class="footer">
+              <div>
+                <a href="https://www.spotify.com/in-en/legal/"
+                  ><span>Legal</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/in-en/privacy/"
+                  ><span>Privacy Center</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                  ><span>Privacy Policy</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                  ><span>Cookies</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                  ><span>About Ads</span></a
+                >
+              </div>
+              <div>
+                <a href="https://www.spotify.com/in-en/accessibility/"
+                  ><span>Accessibility</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-grey rounded">
+        <div class="header rounded">
+          <div class="nav">
+            
+          </div>
+          <div class="button">
+            <button class="signup-btn rounded">Sign up</button>
+            <button class="login-btn">Log in</button>
+          </div>
+        </div>
+        <div class="trending-songs">
+          <h1>Trending songs</h1>
+          <div class="card-container flex">
+            <div class="card rounded flex" id="cards">
+              <div class="C1 rounded" id="0">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Sapphire</h2>
+                <p>Ed Sheeran</p>
+              </div>
+              <div class="C2 C1" id="1">
+                <div class="play-btn">
+                  <img src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616d00001e02b1f8da74f225fa1225cdface"
+                  alt=""
+                  width="220px"
+                />
+                <h2>505</h2>
+                <p>Arctic Monkeys</p>
+              </div>
+              <div class="C3 C1" id="2">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Birds of a feather</h2>
+                <p>Billie Eilish</p>
+              </div>
+              <div class="C4 C1" id="3">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616d00001e02a9da992c2ef398245027d654"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Feel it</h2>
+                <p>d4vd</p>
+              </div>
+              <div class="C5 C1" id="4">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616d00001e022d94d0f04e9a58d1654b760b"
+                  alt=""
+                  width="220px"
+                />
+                <h2>7 Years</h2>
+                <p>Lukas Graham</p>
+              </div>
+              <div class="C6 C1" id="5">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616d00001e02ebc8cfac8b586bc475b04918"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Summertime Sadness</h2>
+                <p>Lana Del Rey</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-artist">
+          <h1>Popular artist</h1>
+          <div class="card-container flex">
+            <div class="card rounded flex cards">
+              <div class="C1 circle rounded" id="0">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616100005174399444ed4eace08b549d1161"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Ed Sheeran</h2>
+              </div>
+              <div class="C2 C1 circle" id="1">
+                <div class="play-btn">
+                  <img src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab676161000051747da39dea0a72f581535fb11f"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Arctic Monkeys</h2>
+              </div>
+              <div class="C3 C1 circle" id="2">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab676161000051744a21b4760d2ecb7b0dcdc8da"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Billie Eilish</h2>
+              </div>
+              <div class="C4 C1 circle" id="3">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616100005174ee632cde061121a5fe48c1d6"
+                  alt=""
+                  width="220px"
+                />
+                <h2>d4vd</h2>
+              </div>
+              <div class="C5 C1 circle" id="4">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616100005174955b1ec67667a5d67ebba167"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Lukas Graham</h2>
+              </div>
+              <div class="C6 C1 circle" id="5">
+                <div class="play-btn">
+                  <img class="" src="play-btn.svg" alt="home" width="31px" />
+                </div>
+                <img
+                  class="rounded"
+                  src="https://i.scdn.co/image/ab67616100005174b99cacf8acd5378206767261"
+                  alt=""
+                  width="220px"
+                />
+                <h2>Lana Del Rey</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="play-bar rounded">
+        <div class="song-info">
+          <div class="song-name info"></div>
+
+          <div class="song-btn">
+            <img id="previous" src="previous.svg" alt="" width="15px" />
+            <img id="play" src="play.svg" alt="" srcset="" width="15px" />
+            <img id="next" src="next.svg" alt="" srcset="" width="15px" />
+          </div>
+
+          <div class="song-time info"></div>
+
+          <div class="volume-container">
+            <img src="volume.svg" alt="Volume" class="volume" />
+            <input type="range" class="volume-bar" />
+          </div>
+
+          <div class="volume-mute">
+            <img width="34px" src="mute.svg" alt="" srcset="">
+          </div>
+        </div>
+
+        <div class="seek-bar rounded">
+          <div class="play-bar-circle"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
